@@ -24,17 +24,29 @@
     </FrameLayout>
 
     <FrameLayout
-        android:id="@+id/frameLayout2"
-        android:layout_width="0dp"
-        android:layout_height="150dp"
+        android:id="@+id/frameLayout16"
+        android:layout_width="150dp"
+        android:layout_height="110dp"
+        android:layout_marginStart="24dp"
+        app:layout_constraintBottom_toBottomOf="@+id/frameLayout15"
+        app:layout_constraintStart_toEndOf="@+id/frameLayout15"
+        app:layout_constraintTop_toTopOf="@+id/frameLayout15">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/bc_grey"
+            app:layout_constraintBottom_toBottomOf="@+id/bottom_movie1" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/frameLayout15"
+        android:layout_width="80dp"
+        android:layout_height="110dp"
         android:layout_marginStart="20dp"
-        android:layout_marginTop="50dp"
-        android:layout_marginEnd="20dp"
-        android:layout_marginBottom="50dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="25dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/frameLayout12">
+        app:layout_constraintTop_toBottomOf="@+id/textView25">
 
         <ImageView
             android:layout_width="match_parent"
@@ -44,20 +56,20 @@
     </FrameLayout>
 
     <FrameLayout
-        android:id="@+id/frameLayout12"
+        android:id="@+id/frameLayout2"
         android:layout_width="0dp"
-        android:layout_height="100dp"
+        android:layout_height="150dp"
         android:layout_marginStart="20dp"
-        android:layout_marginTop="13dp"
+        android:layout_marginTop="25dp"
         android:layout_marginEnd="20dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView25">
+        app:layout_constraintTop_toBottomOf="@+id/frameLayout16">
 
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="@drawable/bc_qr"
+            android:background="@drawable/bc_search"
             app:layout_constraintBottom_toBottomOf="@+id/bottom_movie1" />
     </FrameLayout>
 
@@ -72,11 +84,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/frameLayout8">
 
-        <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:background="@drawable/bc_search"
-            app:layout_constraintBottom_toBottomOf="@+id/bottom_movie1" />
     </FrameLayout>
 
     <FrameLayout
@@ -104,13 +111,12 @@
         android:id="@+id/iv_home1"
         android:layout_width="64dp"
         android:layout_height="64dp"
-        android:layout_marginTop="13dp"
         android:layout_marginEnd="13dp"
         android:layout_marginBottom="13dp"
-        app:layout_constraintBottom_toBottomOf="@+id/frameLayout12"
-        app:layout_constraintEnd_toEndOf="@+id/frameLayout12"
-        app:layout_constraintTop_toTopOf="@+id/frameLayout12"
-        app:srcCompat="@drawable/qr_code_11" />
+        app:layout_constraintBottom_toBottomOf="@+id/frameLayout"
+        app:layout_constraintEnd_toEndOf="@+id/frameLayout"
+        app:layout_constraintTop_toTopOf="@+id/frameLayout"
+        app:srcCompat="@drawable/green_qr" />
 
     <TextView
         android:id="@+id/textView9"
@@ -145,7 +151,7 @@
         app:layout_constraintBottom_toBottomOf="@+id/frameLayout9"
         app:layout_constraintStart_toStartOf="@+id/frameLayout9"
         app:layout_constraintTop_toTopOf="@+id/frameLayout9"
-        app:srcCompat="@drawable/search_1" />
+        app:srcCompat="@drawable/search_2" />
 
     <TextView
         android:id="@+id/textView12"
@@ -186,7 +192,7 @@
         android:layout_marginBottom="20dp"
         app:layout_constraintBottom_toTopOf="@+id/guideline9"
         app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/vector_1" />
+        app:srcCompat="@drawable/vector_2" />
 
     <ImageView
         android:id="@+id/imageView10"
@@ -226,10 +232,9 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="13dp"
         android:layout_marginTop="8dp"
-        android:layout_marginEnd="13dp"
         android:text="1 500 бонусов"
         android:textColor="#FFFFFF"
-        app:layout_constraintEnd_toEndOf="@+id/frameLayout"
+        app:layout_constraintEnd_toStartOf="@+id/iv_home1"
         app:layout_constraintStart_toStartOf="@+id/frameLayout"
         app:layout_constraintTop_toTopOf="@+id/frameLayout" />
 
@@ -240,7 +245,7 @@
         android:layout_marginTop="8dp"
         android:text="До статуса «Эльдорадости Плюс»:\nосталось 25 000 ₽"
         android:textColor="@color/white"
-        app:layout_constraintEnd_toEndOf="@+id/textView23"
+        app:layout_constraintEnd_toStartOf="@+id/iv_home1"
         app:layout_constraintStart_toStartOf="@+id/textView23"
         app:layout_constraintTop_toBottomOf="@+id/textView23" />
 
@@ -254,30 +259,6 @@
         app:layout_constraintEnd_toEndOf="@+id/frameLayout"
         app:layout_constraintStart_toStartOf="@+id/frameLayout"
         app:layout_constraintTop_toBottomOf="@+id/frameLayout" />
-
-    <TextView
-        android:id="@+id/textView26"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="13dp"
-        android:layout_marginTop="13dp"
-        android:layout_marginEnd="13dp"
-        android:text="Консультация с продавцом"
-        android:textColor="@color/black"
-        app:layout_constraintEnd_toStartOf="@+id/iv_home1"
-        app:layout_constraintStart_toStartOf="@+id/frameLayout12"
-        app:layout_constraintTop_toTopOf="@+id/frameLayout12" />
-
-    <TextView
-        android:id="@+id/textView27"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:text="Нажмите на карточку для того, чтобы консультант смог вас иднетифицировать"
-        android:textColor="#848587"
-        app:layout_constraintEnd_toEndOf="@+id/textView26"
-        app:layout_constraintStart_toStartOf="@+id/textView26"
-        app:layout_constraintTop_toBottomOf="@+id/textView26" />
 
     <TextView
         android:id="@+id/textView28"
@@ -300,7 +281,7 @@
         app:layout_constraintBottom_toBottomOf="@+id/frameLayout2"
         app:layout_constraintEnd_toEndOf="@+id/frameLayout2"
         app:layout_constraintTop_toTopOf="@+id/frameLayout2"
-        app:srcCompat="@drawable/product_1" />
+        app:srcCompat="@drawable/product_2" />
 
     <TextView
         android:id="@+id/textView29"
@@ -323,6 +304,66 @@
         app:layout_constraintEnd_toEndOf="@+id/textView29"
         app:layout_constraintStart_toStartOf="@+id/textView29"
         app:layout_constraintTop_toBottomOf="@+id/textView29" />
+
+    <ImageView
+        android:id="@+id/imageView19"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="@+id/frameLayout15"
+        app:layout_constraintTop_toTopOf="@+id/frameLayout15"
+        app:srcCompat="@drawable/outline_qr_code_scanner_black_24" />
+
+    <TextView
+        android:id="@+id/textView26"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="13dp"
+        android:layout_marginBottom="8dp"
+        android:text="Сканируй штрихкод и QR-код"
+        android:textColor="@color/black"
+        android:textSize="11sp"
+        app:layout_constraintBottom_toBottomOf="@+id/frameLayout15"
+        app:layout_constraintEnd_toEndOf="@+id/frameLayout15"
+        app:layout_constraintStart_toStartOf="@+id/frameLayout15"
+        app:layout_constraintTop_toBottomOf="@+id/imageView19" />
+
+    <TextView
+        android:id="@+id/textView27"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="13dp"
+        android:text="Эльдорадости"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/frameLayout16"
+        app:layout_constraintStart_toStartOf="@+id/frameLayout16"
+        app:layout_constraintTop_toTopOf="@+id/frameLayout16" />
+
+    <TextView
+        android:id="@+id/textView31"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Повысьте статус лояльности"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/textView27"
+        app:layout_constraintStart_toStartOf="@+id/textView27"
+        app:layout_constraintTop_toBottomOf="@+id/textView27" />
+
+    <TextView
+        android:id="@+id/textView37"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Ещё 25 000 ₽"
+        app:layout_constraintEnd_toEndOf="@+id/textView31"
+        app:layout_constraintStart_toStartOf="@+id/textView31"
+        app:layout_constraintTop_toBottomOf="@+id/textView31" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

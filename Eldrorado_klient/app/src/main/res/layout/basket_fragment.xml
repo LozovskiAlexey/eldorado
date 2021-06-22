@@ -214,7 +214,7 @@
         android:layout_marginStart="20dp"
         android:layout_marginTop="20dp"
         android:text="Консультация с продавцом"
-        android:textColor="@color/black"
+        android:textColor="#35B850"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/frameLayout8" />
 
@@ -226,7 +226,7 @@
         android:layout_marginTop="20dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView15"
-        app:srcCompat="@drawable/notebook" />
+        app:srcCompat="@drawable/notebook1" />
 
     <TextView
         android:id="@+id/textView16"
@@ -296,7 +296,7 @@
         app:layout_constraintEnd_toEndOf="@+id/textView17"
         app:layout_constraintTop_toBottomOf="@+id/textView17"
         app:layout_constraintVertical_bias="1.0"
-        app:srcCompat="@drawable/trash" />
+        app:srcCompat="@drawable/trash2" />
 
     <TextView
         android:id="@+id/textView21"
@@ -316,7 +316,7 @@
         android:layout_marginTop="20dp"
         app:layout_constraintStart_toStartOf="@+id/textView21"
         app:layout_constraintTop_toBottomOf="@+id/textView21"
-        app:srcCompat="@drawable/notebook2" />
+        app:srcCompat="@drawable/notebook23" />
 
     <TextView
         android:id="@+id/textView32"
@@ -382,7 +382,7 @@
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="@+id/frameLayout11"
         app:layout_constraintEnd_toEndOf="@+id/textView33"
-        app:srcCompat="@drawable/trash" />
+        app:srcCompat="@drawable/trash2" />
 
     <TextView
         android:id="@+id/textView5"
@@ -390,10 +390,41 @@
         android:layout_height="0dp"
         android:gravity="center"
         android:text="Итого: 65890 Р"
-        android:textColor="@color/black"
+        android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="@+id/frameLayout12"
         app:layout_constraintEnd_toEndOf="@+id/frameLayout12"
         app:layout_constraintStart_toStartOf="@+id/frameLayout12"
         app:layout_constraintTop_toTopOf="@+id/frameLayout12" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView15"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView15"
+        app:srcCompat="@drawable/eclipse" />
+
+    <ImageView
+        android:id="@+id/imageView17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="3dp"
+        android:layout_marginBottom="4dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView5"
+        app:layout_constraintStart_toStartOf="@+id/imageView5"
+        app:layout_constraintTop_toTopOf="@+id/imageView5"
+        app:srcCompat="@drawable/ok" />
+
+    <ImageView
+        android:id="@+id/imageView18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView21"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView21"
+        app:srcCompat="@drawable/eclipse_black" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

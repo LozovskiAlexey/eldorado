@@ -33,12 +33,13 @@
     </FrameLayout>
 
     <ScrollView
-        android:layout_width="match_parent"
+        android:layout_width="0dp"
         android:layout_height="0dp"
         app:layout_constraintBottom_toTopOf="@+id/guideline"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
+
         <FrameLayout
             android:id="@+id/container"
             android:layout_width="match_parent"
@@ -73,9 +74,10 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="24dp"
         android:text="Моя лента"
+        android:textColor="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/textView3"
 
+        app:layout_constraintEnd_toStartOf="@+id/textView3"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/frameLayout2" />
 
@@ -85,6 +87,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:text="Каталог"
+        android:textColor="@color/black"
         app:layout_constraintBottom_toBottomOf="@id/tv_home"
         app:layout_constraintEnd_toStartOf="@+id/tv_favorites"
         app:layout_constraintHorizontal_bias="0.5"
@@ -107,6 +110,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:text="Избранное"
+        android:textColor="@color/black"
         app:layout_constraintBottom_toBottomOf="@id/textView3"
         app:layout_constraintEnd_toStartOf="@+id/tv_basket"
         app:layout_constraintHorizontal_bias="0.5"
@@ -129,6 +133,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:text="Корзина"
+        android:textColor="@color/black"
         app:layout_constraintBottom_toBottomOf="@id/tv_favorites"
         app:layout_constraintEnd_toStartOf="@+id/tv_profile"
         app:layout_constraintHorizontal_bias="0.5"
@@ -151,6 +156,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:text="Профиль"
+        android:textColor="@color/black"
         app:layout_constraintBottom_toBottomOf="@id/tv_basket"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
