@@ -83,10 +83,10 @@
 **На выход:** Информация о товаре
 ```yaml
 {
-    "name": String,
-    "image": String,
-    "price": Integer,
-    "amount": Integer
+    "name" : String,
+    "image" : String,
+    "price" : Integer,
+    "amount" : Integer
 }
 ```
 
@@ -124,7 +124,7 @@
 **На вход:** Список идентификаторов товаров и их количество
 ```yaml
 {
-   "products": List<ProductDto>
+   "products" : List<ProductDto>
 }
 ```
 
