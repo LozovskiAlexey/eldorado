@@ -57,7 +57,7 @@
         android:layout_marginTop="8dp"
         app:layout_constraintBottom_toBottomOf="@+id/frameLayout3"
         app:layout_constraintStart_toEndOf="@+id/frameLayout3"
-        app:layout_constraintTop_toBottomOf="@+id/textView33">
+        app:layout_constraintTop_toBottomOf="@+id/tv_price_client">
 
         <ImageView
             android:layout_width="match_parent"
@@ -120,7 +120,7 @@
         android:layout_marginTop="8dp"
         app:layout_constraintBottom_toBottomOf="@+id/iv_product"
         app:layout_constraintStart_toEndOf="@+id/frameLayout6"
-        app:layout_constraintTop_toBottomOf="@+id/tv_price">
+        app:layout_constraintTop_toBottomOf="@+id/tv_price_cons">
 
         <ImageView
             android:layout_width="match_parent"
@@ -241,7 +241,7 @@
         app:layout_constraintTop_toTopOf="@+id/frameLayout6" />
 
     <TextView
-        android:id="@+id/tv_price"
+        android:id="@+id/tv_price_cons"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
@@ -293,8 +293,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="@+id/frameLayout4"
-        app:layout_constraintEnd_toEndOf="@+id/tv_price"
-        app:layout_constraintTop_toBottomOf="@+id/tv_price"
+        app:layout_constraintEnd_toEndOf="@+id/tv_price_cons"
+        app:layout_constraintTop_toBottomOf="@+id/tv_price_cons"
         app:layout_constraintVertical_bias="1.0"
         app:srcCompat="@drawable/trash1111" />
 
@@ -331,7 +331,7 @@
         app:layout_constraintTop_toTopOf="@+id/frameLayout3" />
 
     <TextView
-        android:id="@+id/textView33"
+        android:id="@+id/tv_price_client"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
@@ -381,11 +381,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="@+id/frameLayout11"
-        app:layout_constraintEnd_toEndOf="@+id/textView33"
+        app:layout_constraintEnd_toEndOf="@+id/tv_price_client"
         app:srcCompat="@drawable/trash1111" />
 
     <TextView
-        android:id="@+id/textView5"
+        android:id="@+id/tv_price"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:gravity="center"

@@ -33,7 +33,7 @@ class FragmentBasket : Fragment() {
 
         tvName = view.findViewById(R.id.tv_name)
         ivProduct = view.findViewById(R.id.iv_product)
-        tvPrice = view.findViewById(R.id.tv_price)
+        tvPrice = view.findViewById(R.id.tv_price_cons)
         tvAmount = view.findViewById(R.id.tv_amount)
 
         val basketConsCircle = view.findViewById<ImageView>(R.id.iv_cons_circle)
@@ -42,25 +42,31 @@ class FragmentBasket : Fragment() {
         val tvConsBasket = view.findViewById<TextView>(R.id.tv_cons_basket)
         val tvClientBasket = view.findViewById<TextView>(R.id.tv_basket_client)
 
+        val priceCons = view.findViewById<TextView>(R.id.tv_price_cons)
+        val priceClient = view.findViewById<TextView>(R.id.tv_price_client)
+        val price = view.findViewById<TextView>(R.id.tv_price)
+
         basketClientCircle.setOnClickListener {
             tvClientBasket.setTextColor(Color.GREEN)
             basketClientCircle.setImageResource(R.drawable.eclipse)
+            price.text = priceClient.text
+
 
             tvConsBasket.setTextColor(Color.BLACK)
             basketConsCircle.setImageResource(R.drawable.eclipse_black)
-
         }
 
         basketConsCircle.setOnClickListener {
             tvConsBasket.setTextColor(Color.GREEN)
             basketConsCircle.setImageResource(R.drawable.eclipse)
+            price.text = priceCons.text
 
             tvClientBasket.setTextColor(Color.BLACK)
             basketClientCircle.setImageResource(R.drawable.eclipse_black)
 
         }
 
-        getProduct(clientId)
+        //getProduct(clientId)
 
         return view
     }
