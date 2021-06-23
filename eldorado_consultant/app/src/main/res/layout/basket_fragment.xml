@@ -174,7 +174,7 @@
         app:layout_constraintBottom_toBottomOf="@+id/frameLayout8"
         app:layout_constraintEnd_toEndOf="@+id/frameLayout8"
         app:layout_constraintTop_toTopOf="@+id/frameLayout8"
-        app:srcCompat="@drawable/baseline_near_me_black_48" />
+        app:srcCompat="@drawable/notebook1111" />
 
     <TextView
         android:id="@+id/textView11"
@@ -231,7 +231,7 @@
         android:layout_marginTop="20dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView15"
-        app:srcCompat="@drawable/baseline_near_me_black_48" />
+        app:srcCompat="@drawable/notebook1111" />
 
     <TextView
         android:id="@+id/tv_name"
@@ -303,7 +303,7 @@
         app:layout_constraintEnd_toEndOf="@+id/tv_price"
         app:layout_constraintTop_toBottomOf="@+id/tv_price"
         app:layout_constraintVertical_bias="1.0"
-        app:srcCompat="@drawable/baseline_near_me_black_18" />
+        app:srcCompat="@drawable/trash1111" />
 
     <TextView
         android:id="@+id/textView5"
@@ -426,7 +426,7 @@
         app:layout_constraintBottom_toBottomOf="@+id/frameLayout13"
         app:layout_constraintStart_toStartOf="@+id/imageView15"
         app:layout_constraintTop_toTopOf="@+id/frameLayout13"
-        app:srcCompat="@drawable/baseline_near_me_black_18" />
+        app:srcCompat="@drawable/white_pencil111" />
 
     <TextView
         android:id="@+id/textView21"

@@ -24,7 +24,6 @@ class FragmentBasket : Fragment() {
     private val clientId = 1
     private val consultantId = 1
     private val productId = 1
-    private val products: Map<Int,Int> = mapOf()
     private var amount: Int = 0
 
 
@@ -66,7 +65,7 @@ class FragmentBasket : Fragment() {
             }
         }
 
-        //getClient(consultantId,clientId)
+        getClient(consultantId,clientId)
 
         view.findViewById<TextView>(R.id.tv_payment)?.apply {
             setOnClickListener {
@@ -76,7 +75,7 @@ class FragmentBasket : Fragment() {
         }
 
         view.findViewById<ImageView>(R.id.iv_scan).setOnClickListener {
-           // getProduct(consultationId!!, productId)
+            getProduct(consultationId!!, productId)
 
         }
     }

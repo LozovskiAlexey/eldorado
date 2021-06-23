@@ -9,5 +9,5 @@ data class Product(
     @SerialName("image") val image: String,
     @SerialName("price") val price: Int,
     @SerialName("amount") val amount: Int,
-    //@SerialName("category") val category: String
+    @SerialName("category") val category: String
 )

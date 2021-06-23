@@ -162,7 +162,7 @@
         android:layout_marginBottom="20dp"
         app:layout_constraintBottom_toTopOf="@+id/guideline9"
         app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/baseline_near_me_24" />
+        app:srcCompat="@drawable/vector1111" />
 
     <ImageView
         android:id="@+id/imageView11"
@@ -244,7 +244,7 @@
         app:layout_constraintBottom_toBottomOf="@+id/frameLayout2"
         app:layout_constraintEnd_toEndOf="@+id/frameLayout2"
         app:layout_constraintTop_toTopOf="@+id/frameLayout2"
-        app:srcCompat="@drawable/baseline_near_me_black_48" />
+        app:srcCompat="@drawable/product2222" />
 
     <TextView
         android:id="@+id/textView29"
@@ -305,7 +305,7 @@
         android:layout_marginTop="8dp"
         app:layout_constraintStart_toStartOf="@+id/frameLayout15"
         app:layout_constraintTop_toTopOf="@+id/frameLayout15"
-        app:srcCompat="@drawable/baseline_near_me_black_18" />
+        app:srcCompat="@drawable/pencil1111" />
 
     <TextView
         android:id="@+id/textView12"
@@ -353,6 +353,7 @@
         android:layout_marginStart="13dp"
         android:layout_marginTop="8dp"
         android:text="Важно!"
+        android:textColor="@color/black"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="@+id/frameLayout17"
         app:layout_constraintTop_toTopOf="@+id/frameLayout17" />
