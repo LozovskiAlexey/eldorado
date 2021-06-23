@@ -31,10 +31,18 @@ class MainActivity : AppCompatActivity(), FragmentClickListener {
             .replace(R.id.container, FragmentBasket())
             .commit()
     }
+
+    override fun onReplaceFragmentTagClicked() {
+        supportFragmentManager.beginTransaction()
+            .addToBackStack(null)
+            .replace(R.id.container, FragmentTag())
+            .commit()
+    }
 }
 
 interface FragmentClickListener {
     fun onReplaceFragmentConsultationClicked()
     fun onReplaceFragmentBasketClicked()
+    fun onReplaceFragmentTagClicked()
 
 }

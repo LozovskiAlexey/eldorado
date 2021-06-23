@@ -6,12 +6,12 @@
     android:layout_height="match_parent">
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/tv_payment"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
         android:layout_marginEnd="20dp"
-        android:text="Корзина"
+        android:text="Завершить"
         android:textColor="#35B850"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -93,6 +93,7 @@
         app:layout_constraintTop_toBottomOf="@+id/frameLayout6">
 
         <ImageView
+            android:id="@+id/iv_scan"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:background="@drawable/bc_bonus" />
@@ -103,12 +104,13 @@
         android:id="@+id/frameLayout6"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        app:layout_constraintBottom_toBottomOf="@+id/imageView12"
-        app:layout_constraintEnd_toEndOf="@+id/imageView12"
-        app:layout_constraintStart_toStartOf="@+id/imageView12"
-        app:layout_constraintTop_toTopOf="@+id/imageView12">
+        app:layout_constraintBottom_toBottomOf="@+id/iv_product"
+        app:layout_constraintEnd_toEndOf="@+id/iv_product"
+        app:layout_constraintStart_toStartOf="@+id/iv_product"
+        app:layout_constraintTop_toTopOf="@+id/iv_product">
 
         <ImageView
+            android:id="@+id/product_image"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:background="@drawable/bc_product" />
@@ -121,9 +123,9 @@
         android:layout_height="32dp"
         android:layout_marginStart="20dp"
         android:layout_marginTop="8dp"
-        app:layout_constraintBottom_toBottomOf="@+id/imageView12"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_product"
         app:layout_constraintStart_toEndOf="@+id/frameLayout6"
-        app:layout_constraintTop_toBottomOf="@+id/textView17">
+        app:layout_constraintTop_toBottomOf="@+id/tv_price">
 
         <ImageView
             android:layout_width="match_parent"
@@ -138,7 +140,7 @@
         android:layout_height="32dp"
         android:layout_marginStart="10dp"
         app:layout_constraintBottom_toBottomOf="@+id/frameLayout5"
-        app:layout_constraintStart_toEndOf="@+id/textView19"
+        app:layout_constraintStart_toEndOf="@+id/tv_amount"
         app:layout_constraintTop_toTopOf="@+id/frameLayout5">
 
         <ImageView
@@ -172,7 +174,7 @@
         app:layout_constraintBottom_toBottomOf="@+id/frameLayout8"
         app:layout_constraintEnd_toEndOf="@+id/frameLayout8"
         app:layout_constraintTop_toTopOf="@+id/frameLayout8"
-        app:srcCompat="@drawable/notebook111" />
+        app:srcCompat="@drawable/baseline_near_me_black_48" />
 
     <TextView
         android:id="@+id/textView11"
@@ -222,17 +224,17 @@
         app:layout_constraintTop_toBottomOf="@+id/frameLayout8" />
 
     <ImageView
-        android:id="@+id/imageView12"
+        android:id="@+id/iv_product"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
         android:layout_marginTop="20dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView15"
-        app:srcCompat="@drawable/notebook111" />
+        app:srcCompat="@drawable/baseline_near_me_black_48" />
 
     <TextView
-        android:id="@+id/textView16"
+        android:id="@+id/tv_name"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
@@ -245,15 +247,15 @@
         app:layout_constraintTop_toTopOf="@+id/frameLayout6" />
 
     <TextView
-        android:id="@+id/textView17"
+        android:id="@+id/tv_price"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:text="39 990 Р"
         android:textColor="@color/black"
-        app:layout_constraintEnd_toEndOf="@+id/textView16"
-        app:layout_constraintStart_toStartOf="@+id/textView16"
-        app:layout_constraintTop_toBottomOf="@+id/textView16" />
+        app:layout_constraintEnd_toEndOf="@+id/tv_name"
+        app:layout_constraintStart_toStartOf="@+id/tv_name"
+        app:layout_constraintTop_toBottomOf="@+id/tv_name" />
 
     <TextView
         android:id="@+id/textView18"
@@ -268,7 +270,7 @@
         app:layout_constraintTop_toTopOf="@+id/frameLayout5" />
 
     <TextView
-        android:id="@+id/textView19"
+        android:id="@+id/tv_amount"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="10dp"
@@ -298,10 +300,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="@+id/frameLayout4"
-        app:layout_constraintEnd_toEndOf="@+id/textView17"
-        app:layout_constraintTop_toBottomOf="@+id/textView17"
+        app:layout_constraintEnd_toEndOf="@+id/tv_price"
+        app:layout_constraintTop_toBottomOf="@+id/tv_price"
         app:layout_constraintVertical_bias="1.0"
-        app:srcCompat="@drawable/trash111" />
+        app:srcCompat="@drawable/baseline_near_me_black_18" />
 
     <TextView
         android:id="@+id/textView5"
@@ -349,7 +351,7 @@
         app:layout_constraintTop_toTopOf="@+id/imageView20" />
 
     <TextView
-        android:id="@+id/textView37"
+        android:id="@+id/tv_client_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Глеб"
@@ -424,7 +426,7 @@
         app:layout_constraintBottom_toBottomOf="@+id/frameLayout13"
         app:layout_constraintStart_toStartOf="@+id/imageView15"
         app:layout_constraintTop_toTopOf="@+id/frameLayout13"
-        app:srcCompat="@drawable/white_pencil11" />
+        app:srcCompat="@drawable/baseline_near_me_black_18" />
 
     <TextView
         android:id="@+id/textView21"
@@ -439,7 +441,7 @@
         app:layout_constraintTop_toTopOf="@+id/frameLayout13" />
 
     <TextView
-        android:id="@+id/textView32"
+        android:id="@+id/tv_tag"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Геймер"
@@ -451,7 +453,7 @@
         app:layout_constraintTop_toTopOf="@+id/frameLayout_yellow" />
 
     <TextView
-        android:id="@+id/textView33"
+        android:id="@+id/tv_tag1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Студент"

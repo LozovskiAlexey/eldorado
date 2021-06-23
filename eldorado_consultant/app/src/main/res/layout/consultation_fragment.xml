@@ -162,7 +162,7 @@
         android:layout_marginBottom="20dp"
         app:layout_constraintBottom_toTopOf="@+id/guideline9"
         app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/vector111" />
+        app:srcCompat="@drawable/baseline_near_me_24" />
 
     <ImageView
         android:id="@+id/imageView11"
@@ -195,7 +195,7 @@
         android:text="Консультация покупателя"
         android:textColor="#FFFFFF"
         android:textSize="21sp"
-        app:layout_constraintEnd_toStartOf="@+id/iv_basket"
+        app:layout_constraintEnd_toStartOf="@+id/iv_qr_scan"
         app:layout_constraintStart_toStartOf="@+id/frameLayout"
         app:layout_constraintTop_toTopOf="@+id/frameLayout" />
 
@@ -244,7 +244,7 @@
         app:layout_constraintBottom_toBottomOf="@+id/frameLayout2"
         app:layout_constraintEnd_toEndOf="@+id/frameLayout2"
         app:layout_constraintTop_toTopOf="@+id/frameLayout2"
-        app:srcCompat="@drawable/product222" />
+        app:srcCompat="@drawable/baseline_near_me_black_48" />
 
     <TextView
         android:id="@+id/textView29"
@@ -269,7 +269,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView29" />
 
     <ImageView
-        android:id="@+id/iv_basket"
+        android:id="@+id/iv_qr_scan"
         android:layout_width="wrap_content"
         android:layout_height="0dp"
         android:layout_marginTop="13dp"
@@ -305,7 +305,7 @@
         android:layout_marginTop="8dp"
         app:layout_constraintStart_toStartOf="@+id/frameLayout15"
         app:layout_constraintTop_toTopOf="@+id/frameLayout15"
-        app:srcCompat="@drawable/pencil222" />
+        app:srcCompat="@drawable/baseline_near_me_black_18" />
 
     <TextView
         android:id="@+id/textView12"
