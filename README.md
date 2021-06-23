@@ -1,4 +1,4 @@
-# Eldorado-Hackathon, команда Smart Retail
+# Eldorado-Hackathon, команда Тополиный пух
 
   
 ## Участники
