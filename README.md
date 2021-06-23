@@ -83,10 +83,10 @@
 **На выход:** Информация о товаре
 ```yaml
 {
-    name: String,
-    image: String,
-    price: Integer,
-    amount: Integer
+    "name": String,
+    "image": String,
+    "price": Integer,
+    "amount": Integer
 }
 ```
 
