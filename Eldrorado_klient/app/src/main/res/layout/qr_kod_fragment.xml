@@ -151,7 +151,7 @@
         app:layout_constraintBottom_toBottomOf="@+id/frameLayout9"
         app:layout_constraintStart_toStartOf="@+id/frameLayout9"
         app:layout_constraintTop_toTopOf="@+id/frameLayout9"
-        app:srcCompat="@drawable/search_2" />
+        app:srcCompat="@drawable/search_2222" />
 
     <TextView
         android:id="@+id/textView12"
@@ -192,7 +192,7 @@
         android:layout_marginBottom="20dp"
         app:layout_constraintBottom_toTopOf="@+id/guideline9"
         app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/vector_2" />
+        app:srcCompat="@drawable/vector1111" />
 
     <ImageView
         android:id="@+id/imageView10"
@@ -281,7 +281,7 @@
         app:layout_constraintBottom_toBottomOf="@+id/frameLayout2"
         app:layout_constraintEnd_toEndOf="@+id/frameLayout2"
         app:layout_constraintTop_toTopOf="@+id/frameLayout2"
-        app:srcCompat="@drawable/product_2" />
+        app:srcCompat="@drawable/product2222" />
 
     <TextView
         android:id="@+id/textView29"

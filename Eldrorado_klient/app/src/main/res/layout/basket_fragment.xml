@@ -85,10 +85,10 @@
         android:id="@+id/frameLayout6"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        app:layout_constraintBottom_toBottomOf="@+id/imageView12"
-        app:layout_constraintEnd_toEndOf="@+id/imageView12"
-        app:layout_constraintStart_toStartOf="@+id/imageView12"
-        app:layout_constraintTop_toTopOf="@+id/imageView12">
+        app:layout_constraintBottom_toBottomOf="@+id/iv_product"
+        app:layout_constraintEnd_toEndOf="@+id/iv_product"
+        app:layout_constraintStart_toStartOf="@+id/iv_product"
+        app:layout_constraintTop_toTopOf="@+id/iv_product">
 
         <ImageView
             android:layout_width="match_parent"
@@ -118,9 +118,9 @@
         android:layout_height="32dp"
         android:layout_marginStart="20dp"
         android:layout_marginTop="8dp"
-        app:layout_constraintBottom_toBottomOf="@+id/imageView12"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_product"
         app:layout_constraintStart_toEndOf="@+id/frameLayout6"
-        app:layout_constraintTop_toBottomOf="@+id/textView17">
+        app:layout_constraintTop_toBottomOf="@+id/tv_price">
 
         <ImageView
             android:layout_width="match_parent"
@@ -135,7 +135,7 @@
         android:layout_height="32dp"
         android:layout_marginStart="10dp"
         app:layout_constraintBottom_toBottomOf="@+id/frameLayout5"
-        app:layout_constraintStart_toEndOf="@+id/textView19"
+        app:layout_constraintStart_toEndOf="@+id/tv_amount"
         app:layout_constraintTop_toTopOf="@+id/frameLayout5">
 
         <ImageView
@@ -208,7 +208,7 @@
         app:layout_constraintTop_toTopOf="@+id/frameLayout7" />
 
     <TextView
-        android:id="@+id/textView15"
+        android:id="@+id/tv_cons_basket"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
@@ -219,17 +219,17 @@
         app:layout_constraintTop_toBottomOf="@+id/frameLayout8" />
 
     <ImageView
-        android:id="@+id/imageView12"
+        android:id="@+id/iv_product"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
         android:layout_marginTop="20dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView15"
-        app:srcCompat="@drawable/notebook1" />
+        app:layout_constraintTop_toBottomOf="@+id/tv_cons_basket"
+        app:srcCompat="@drawable/notebook11111" />
 
     <TextView
-        android:id="@+id/textView16"
+        android:id="@+id/tv_name"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
@@ -241,15 +241,15 @@
         app:layout_constraintTop_toTopOf="@+id/frameLayout6" />
 
     <TextView
-        android:id="@+id/textView17"
+        android:id="@+id/tv_price"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:text="39 990 Р"
         android:textColor="@color/black"
-        app:layout_constraintEnd_toEndOf="@+id/textView16"
-        app:layout_constraintStart_toStartOf="@+id/textView16"
-        app:layout_constraintTop_toBottomOf="@+id/textView16" />
+        app:layout_constraintEnd_toEndOf="@+id/tv_name"
+        app:layout_constraintStart_toStartOf="@+id/tv_name"
+        app:layout_constraintTop_toBottomOf="@+id/tv_name" />
 
     <TextView
         android:id="@+id/textView18"
@@ -264,7 +264,7 @@
         app:layout_constraintTop_toTopOf="@+id/frameLayout5" />
 
     <TextView
-        android:id="@+id/textView19"
+        android:id="@+id/tv_amount"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="10dp"
@@ -293,13 +293,13 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="@+id/frameLayout4"
-        app:layout_constraintEnd_toEndOf="@+id/textView17"
-        app:layout_constraintTop_toBottomOf="@+id/textView17"
+        app:layout_constraintEnd_toEndOf="@+id/tv_price"
+        app:layout_constraintTop_toBottomOf="@+id/tv_price"
         app:layout_constraintVertical_bias="1.0"
-        app:srcCompat="@drawable/trash2" />
+        app:srcCompat="@drawable/trash1111" />
 
     <TextView
-        android:id="@+id/textView21"
+        android:id="@+id/tv_basket_client"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
@@ -314,9 +314,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
-        app:layout_constraintStart_toStartOf="@+id/textView21"
-        app:layout_constraintTop_toBottomOf="@+id/textView21"
-        app:srcCompat="@drawable/notebook23" />
+        app:layout_constraintStart_toStartOf="@+id/tv_basket_client"
+        app:layout_constraintTop_toBottomOf="@+id/tv_basket_client"
+        app:srcCompat="@drawable/notebook2222" />
 
     <TextView
         android:id="@+id/textView32"
@@ -382,7 +382,7 @@
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="@+id/frameLayout11"
         app:layout_constraintEnd_toEndOf="@+id/textView33"
-        app:srcCompat="@drawable/trash2" />
+        app:srcCompat="@drawable/trash1111" />
 
     <TextView
         android:id="@+id/textView5"
@@ -397,34 +397,23 @@
         app:layout_constraintTop_toTopOf="@+id/frameLayout12" />
 
     <ImageView
-        android:id="@+id/imageView5"
+        android:id="@+id/iv_cons_circle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="20dp"
-        app:layout_constraintBottom_toBottomOf="@+id/textView15"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_cons_basket"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/textView15"
+        app:layout_constraintTop_toTopOf="@+id/tv_cons_basket"
         app:srcCompat="@drawable/eclipse" />
 
     <ImageView
-        android:id="@+id/imageView17"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="3dp"
-        android:layout_marginBottom="4dp"
-        app:layout_constraintBottom_toBottomOf="@+id/imageView5"
-        app:layout_constraintStart_toStartOf="@+id/imageView5"
-        app:layout_constraintTop_toTopOf="@+id/imageView5"
-        app:srcCompat="@drawable/ok" />
-
-    <ImageView
-        android:id="@+id/imageView18"
+        android:id="@+id/iv_client_circle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="20dp"
-        app:layout_constraintBottom_toBottomOf="@+id/textView21"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_basket_client"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/textView21"
+        app:layout_constraintTop_toTopOf="@+id/tv_basket_client"
         app:srcCompat="@drawable/eclipse_black" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -25,7 +25,7 @@ class MainActivity : AppCompatActivity(), FragmentClickListener {
     override fun onReplaceFragmentFavoritesClicked() {
         supportFragmentManager.beginTransaction()
             .addToBackStack(null)
-            .replace(R.id.container, FragmentFavorites())
+            .replace(R.id.container, FragmentBasket())
             .commit()
     }
 

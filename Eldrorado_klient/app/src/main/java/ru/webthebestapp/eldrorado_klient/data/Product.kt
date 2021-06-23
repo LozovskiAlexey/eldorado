@@ -1,4 +1,4 @@
-package ru.webthebestapp.eldorado_consultant.data
+package ru.webthebestapp.eldrorado_klient.data
 
 import kotlinx.serialization.SerialName
 import kotlinx.serialization.Serializable
